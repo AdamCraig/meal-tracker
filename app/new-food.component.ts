@@ -11,7 +11,7 @@ import { Food } from './food.model';
       <input placeholder="Description" class="input-lg" #newFoodDescription required>
       <input placeholder="Calories" type="number" class="input-lg" #newFoodCalories required>
       <br>
-      <button (click)="addFood(newFoodName, newFoodDescription, newFoodCalories)" class="btn-info btn-lg add-button">Send Me To Food Tracking Land</button>
+      <button (click)="addFood(newFoodName, newFoodDescription, newFoodCalories)" class="btn-info btn-lg add-button">Track My Food, I Guess</button>
     </div>
   `
 })
