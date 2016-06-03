@@ -21,7 +21,9 @@ export class AppComponent {
     this.foods = [
       new Food("A Totally Real And Not-Just-For-Testing Cheeseburger", "Definitely not a hologram.", 700),
       new Food("An Ice Cream Sundae Made of Nothing But Kitten Dreams", "For more testing purposes.", 12),
-      new Food("A Mountain of Ghost-Chocolate", "Tastes like nothing.", 4)
+      new Food("A Mountain of Ghost-Chocolate", "Tastes like nothing.", 4),
+      new Food("An Ice Cream Sundae Made of Nothing But Kitten Dreams", "For more testing purposes.", 12),
+      new Food("An Ice Cream Sundae Made of Nothing But Kitten Dreams", "For more testing purposes.", 12)
     ];
   }
   foodWasSelected(clickedFood: Food): void {

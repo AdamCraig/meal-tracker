@@ -1,8 +1,24 @@
+body {
+  text-align: center;
+}
+
 h1 {
   color: darkgreen;
 }
 
 .selected {
-  border: solid black 3px;
-  padding: 3px;
+  text-decoration: underline;
+}
+
+.food-list {
+  border-right: inset 3px;
+}
+
+.food-details {
+  border-left: inset 3px;
+}
+
+.medium-image {
+  height: 300px;
+  width: 300px;
 }
