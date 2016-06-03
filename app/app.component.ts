@@ -1,30 +1,6 @@
 import { Component, EventEmitter } from 'angular2/core';
-
-@Component({
-  selector: 'food-list',
-  inputs: ['foodList'],
-  outputs: ['onFoodSelect'],
-  template: `
-    <h3 *ngFor="#currentFood of foodList"
-     (click)="foodClicked(currentFood)"
-     [class.selected]="currentFood === selectedFood">
-      {{ currentFood.name }}
-    </h3>
-  `
-})
-export class FoodListComponent {
-  public foodList: Food[];
-  public onFoodSelect: EventEmitter<Food>;
-  public selectedFood: Food;
-  constructor() {
-    this.onFoodSelect = new EventEmitter();
-  }
-  foodClicked(clickedFood: Food): void {
-    console.log(clickedFood);
-    this.selectedFood = clickedFood;
-    this.onFoodSelect.emit(clickedFood);
-  }
-}
+import { FoodListComponent } from './food-list.component';
+import { Food } from './food.model';
 
 @Component({
   selector: 'my-app',
@@ -49,12 +25,5 @@ export class AppComponent {
     ];
   }
   foodWasSelected(clickedFood: Food): void {
-    console.log(clickedFood.name);
-  }
-}
-
-export class Food {
-  constructor(public name: string, public description: string, public calories: number) {
-
   }
 }
