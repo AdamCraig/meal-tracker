@@ -21,8 +21,8 @@ export class AppComponent {
     this.foods = [
       new Food("A Totally Real And Not-Just-For-Testing Cheeseburger", "Definitely not a hologram.", 700),
       new Food("An Ice Cream Sundae Made of Nothing But Kitten Dreams", "You felt moderately guilty eating it.", 600),
-      new Food("A Mountain of Ghost-Chocolate", "Tastes like nothing.", 2),
-      new Food("A Taco Constantly Phasing In And Out Of This Dimension", "It's both here and not here simultaneously.", 550),
+      new Food("A Mountain of Ghost-Chocolate", "Tasted like nothing.", 2),
+      new Food("A Taco Constantly Phasing In And Out Of This Dimension", "It's both here and not here, simultaneously. Still delicious when it's the former.", 550),
       new Food("A Salad Made of Air", "Super healthy. It doesn't really feel like you ate anything, though.", 3)
     ];
   }
