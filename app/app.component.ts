@@ -1,13 +1,41 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
+
+@Component({
+  selector: 'food-list',
+  inputs: ['foodList'],
+  outputs: ['onFoodSelect'],
+  template: `
+    <h3 *ngFor="#currentFood of foodList"
+     (click)="foodClicked(currentFood)"
+     [class.selected]="currentFood === selectedFood">
+      {{ currentFood.name }}
+    </h3>
+  `
+})
+export class FoodListComponent {
+  public foodList: Food[];
+  public onFoodSelect: EventEmitter<Food>;
+  public selectedFood: Food;
+  constructor() {
+    this.onFoodSelect = new EventEmitter();
+  }
+  foodClicked(clickedFood: Food): void {
+    console.log(clickedFood);
+    this.selectedFood = clickedFood;
+    this.onFoodSelect.emit(clickedFood);
+  }
+}
 
 @Component({
   selector: 'my-app',
+  directives: [FoodListComponent],
   template: `
     <div class="container">
       <h1>Meal Tracker~</h1>
-      <h3 *ngFor="#food of foods" (click)="foodWasSelected(food)">
-        {{ food.name }}
-      </h3>
+      <food-list
+      [foodList]="foods"
+      (onFoodSelect)="foodWasSelected($event)">
+      </food-list>
     </div>
   `
 })
