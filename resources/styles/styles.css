@@ -1,24 +1,60 @@
 body {
+  background-image: url(/resources/images/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-color: #FFFBA4;
+  background-size: contain;
   text-align: center;
+  font-family: 'Bangers', sans-serif;
 }
 
 h1 {
-  color: darkgreen;
+  font-size: 44pt;
+}
+
+input {
+  text-align: center;
+}
+
+.dog {
+  margin-top: 180px;
+  width: 400px;
+  height: 200px;
 }
 
 .selected {
   text-decoration: underline;
+  color: #FC8563;
 }
 
 .food-list {
   border-right: inset 3px;
 }
 
+.food-box:hover {
+  color: #FC8563;
+  cursor: crosshair;
+  text-indent: 20px;
+  text-decoration: underline;
+}
+
+.add-button {
+  color: black;
+}
+
 .food-details {
   border-left: inset 3px;
+}
+
+.details-label {
+  text-decoration: underline;
+}
+
+.edit-food-form {
+  width: 500px;
 }
 
 .medium-image {
   height: 300px;
   width: 300px;
+  border-radius: 10px;
 }
