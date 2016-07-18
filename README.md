@@ -1,4 +1,6 @@
-# _Meal-Tracker_
+![Home Page](screenshot.png)
+
+# _(A Very Odd) Meal Tracker_
 
 #### _A JavaScript web app allowing a user to track their meals._
 
@@ -13,7 +15,6 @@ _A web app that utilizes JavaScript/TypeScript in the Angular 2 environment to a
 * _Ensure that NPM and Bower are installed on your machine._
 * _Using the command line, clone the meal-tracker repository to your desktop using the command "git clone https://github.com/AdamCraig/meal-tracker"_
 * _In the command line, navigate to the meal-tracker folder and install dependencies using the commands "npm install" and "bower install"._
-* _Build the vendor files with the command "bower install bootstrap --save", then run the command "gulp bower".
 * _After dependencies have finished loading/installing, run the command "gulp build"._
 * _After the build task has completed, run the command "gulp serve"._
 
